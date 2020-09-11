@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body">
+    <div class="container">
+        <div class="wrapper">
+            <h1 class="header">Какой-то там заголовок</h1>
+            <button class="button" type="button">Жать сюда</button>
+        </div>
+    </div>
+    <div class="form__wrapper">
+        <form class="register__form form form--hide" action="#" method="POST" name="register__form">
+            <div class="form__header">
+                <p>Регистрация</p>
+            </div>
+            <label>Введите имя
+                <input type="text" name="user-name" placeholder="Акакий" required="" pattern="^[A-Za-zА-Яа-яЁё\s]+$">
+            </label>
+            <label>
+                Введите e-mail
+                <input type="email" name="email" placeholder="test@test.ru" required="">
+            </label>
+            <label>
+                Введите телефон
+                <input type="tel" name="tel-number" placeholder="+7 900 009 09 09" required="" id="tel">
+            </label>
+            <button class="form__button form__button--register" type="button">Зарегистрироваться</button>
+            <button class="form__button form__button--enter" type="submit">Войти</button>
+            <button class="form__close" type="button" aria-label="Закрыть"></button>
+        </form>
+    </div>
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
