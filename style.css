@@ -143,6 +143,7 @@
     border: none;
     border-radius: 8px;
     background-color: #2c82d2;
+    cursor: pointer;
 }
 
 .form__button--enter {
